@@ -3,7 +3,7 @@ from user import User
 class Admin(User):
     def __init__(self, name: str, field: str, permissions: list):
         super().__init__(name, role="Admin")
-        self.permissions = permissions  # Add permissions list
+        self.permissions = permissions
 
     def ShowInfo(self):
         return f"Admin: {self.name}, Permissions: {self.permissions}"
