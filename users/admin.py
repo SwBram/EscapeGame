@@ -1,7 +1,7 @@
 from user import User
 
 class Admin(User):
-    def __init__(self, name: str, field: str, permissions: list):
+    def __init__(self, name: str, permissions: list):
         super().__init__(name, role="Admin")
         self.permissions = permissions
 
