@@ -6,8 +6,17 @@ class Player(User):
         self.hints_count = hints_count
         self.puzzles_solved = puzzles_solved
 
-    def ShowInfo(self):
-        return f"Player: {self.name}, Hints: {self.hints_count}, Puzzles Solved: {self.puzzles_solved}"
-
-    def GetStatus(self):
-        return f"Status: {self.puzzles_solved} puzzles solved, {self.hints_count} hints used"
+    def ShowName(self) -> str:
+        return self.name
+    
+    def ShowHintsCount(self):
+        return self.hints_count
+    
+    def ShowPuzzelsSolved(self):
+        return self.puzzles_solved
+    
+    def ShowRole(self):
+        return self.role
+    
+    def ShowInfo(self) -> str:
+        return f"name: {self.name}"

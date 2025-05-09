@@ -7,4 +7,4 @@ class User(ABC):
 
     @abstractmethod
     def ShowInfo(self) -> str:
-        return f"name: {self.name}, role: {self.role}"
+        pass
