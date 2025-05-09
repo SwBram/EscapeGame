@@ -1,4 +1,6 @@
-class Logger:
+from component import Component
+
+class Logger(Component):
     def __init__(self):
         self.messages = []
 
@@ -7,4 +9,6 @@ class Logger:
 
     def get_messages(self) -> list[str]:
         return self.messages
+    
+
 
