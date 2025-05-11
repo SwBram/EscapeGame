@@ -7,21 +7,21 @@ class Player(User):
         self.puzzles_solved = puzzles_solved
 
     def GetName(self) -> str:
-        """Return the name of the player."""
+        """Return the name of the user."""
         return self.name
     
     def GetHintsCount(self):
-        """Return player's hints count."""
+        """Return user's hints count."""
         return self.hints_count
     
-    def GetPuzzelsSolved(self):
-        """Return player's puzzles solved."""
+    def GetPuzzlesSolved(self):
+        """Return user's puzzles solved."""
         return self.puzzles_solved
     
     def GetRole(self):
-        """Return player role."""
+        """Return user role."""
         return self.role
     
     def ShowInfo(self) -> str:
-        """Show player info."""
+        """Show user info."""
         return f"name: {self.name}, Hints count: {self.hints_count}, Puzzles solved: {self.puzzles_solved}"
