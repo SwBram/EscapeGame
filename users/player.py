@@ -1,6 +1,18 @@
 from user import User
 
 class Player(User):
+    """
+    Concrete class that represents a player.
+
+    Inherits:
+        User: Abstract class.
+
+    Methods:
+    - GetName(): Return the name of the user.
+    - GetHintsCount(): Return user's hints count.
+    - GetPuzzlesSolved(): Return user's puzzles solved.
+    - GetRole(): Return user role.
+    """
     def __init__(self, name: str, hints_count: int, puzzles_solved: int):
         super().__init__(name, role="Player")
         self.hints_count = hints_count
