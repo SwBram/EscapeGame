@@ -6,6 +6,7 @@ class Timer(Component):
         self.max_time = max_time
         self.start_time = None
         self.stop_time = None
+        
 
     def startTime(self):
         self.start_time = datetime.now()

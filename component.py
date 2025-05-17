@@ -13,3 +13,5 @@ class Component(ABC):
     def stop(self) -> None:
         self.running = False
         print("Component gestopt.")
+
+
