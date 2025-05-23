@@ -10,3 +10,5 @@ class RiddlePuzzle(Puzzle):
             self.hint_index += 1
             return hint
         return "Geen hints meer beschikbaar."
+
+
